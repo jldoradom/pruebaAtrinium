@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <title>Atrinium</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" >
+        <link href="css/estilos.css" rel="stylesheet" >
+        <link href="css/resposive.css" rel="stylesheet" >
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top p-rl-0 menu">
+            <!-- start logo -->
+            <div class="col-auto">
+                <a href="index.html" title="" class="logo">
+                    <img src="img/atrinium-logo.svg" data-rjs="" class="logo" alt="" data-no-retina="" data-rjs-processed="true" width="180" height="38">
+                    
+                </a>
+            </div>
+            <!-- end logo -->
+            <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse menu-color" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                </li>
+                
+                </ul>
+                
+            </div>
+        </nav>
+
+        <main role="main">
+
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron bg-jumbotron ">
+                <div class="container">
+                    <h1 class="text-center">Prueba Frontend Atrinium</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4 font-weight-bold">
+                                   Datos personales
+                                </h2>
+                                <div class="alert  d-none-normal" role="alert" id="aviso">
+                                    
+                                  </div>
+                                <form  id="form" >
+                                    <div class="form-group">
+                                        <label>Pais</label><br>
+                                        <select name="paises" id="paises" class="form-control"></select>
+                                    </div>
+                                    <div class="form-group" id="tipoPersona">
+                                        <label>Tipo de Persona</label><br>
+                                       <div class="d-flex">
+                                            <label class="mr-4 label-radio" name="fisica">Física</label>
+                                            <input type="radio" class="form-control mr-5" id="fisica"  name="tipoPersona" value="fisica" />
+                                            <label class="mr-4 label-radio">Jurídica</label>
+                                            <input type="radio" class="form-control" id="juridica"  name="tipoPersona" value="juridica" />
+                                       </div>
+                                    </div>
+                                    <div class="form-group d-none" id="divNombre">
+                                        <label>Nombre</label>
+                                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre" />
+                                    </div>
+                                    <div class="form-group d-none" id="divApellidos">
+                                        <label>Apellidos</label>
+                                        <input type="text" class="form-control" placeholder="Apellidos" name="apellidos" id="apellidos" />
+                                    </div>
+                                    <div class="form-group d-none" id="divSociedad">
+                                        <label>Nombre Sociedad</label>
+                                        <input type="text" class="form-control" placeholder="Nombre Sociedad" name="nombreSociedad" id="nombreSociedad" />
+                                    </div>
+                                    <div class="form-group d-none" id="divDni">
+                                        <label>DNI</label>
+                                        <input type="text" class="form-control" id="dni" placeholder="Su DNI" name="dni" />
+                                    </div>
+                                    <div class="form-group d-none" id="divCif">
+                                        <label>CIF</label>
+                                        <input type="text" class="form-control" id="cif" placeholder="Su CIF" name="cif" />
+                                    </div>
+                                    <div class="form-group d-none" id="divPasaporte">
+                                        <label>Pasaporte</label>
+                                        <input type="text" class="form-control" id="pasaporte" placeholder="Su Pasaporte" name="pasaporte" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label name="telefono">Teléfono</label>
+                                        <input type="text" class="form-control" placeholder="Su teléfono" id="telefono" name="telefono"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control" placeholder="Su Email" id="email" name="email"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Via</label>
+                                        <input type="text" class="form-control" placeholder="Nombre de la Calle" id="calle" name="calle"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Numero Via</label>
+                                        <input type="text" class="form-control" placeholder="Numero de la Calle" id="numerovia" name="calle"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ciudad</label>
+                                        <input type="text" class="form-control" placeholder="Localidad" id="ciudad" name="calle"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Código postal</label>
+                                        <input type="text" class="form-control" placeholder="Su código postal" id="cp" name="calle"/>
+                                    </div>
+                                  
+                                
+                                    <input value="Enviar" type="submit"  class="btn btn-primary font-weight-bold text-uppercase d-block w-100" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4 font-weight-bold">
+                                   Su selección
+                                </h2>
+                                <p id="datos"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div> 
+        </main>
+        <footer class="container">
+            <small>&copy; Atrinium 2020</small>
+        </footer>
+        <script src="js/jquery-3.4.1.slim.min.js" ></script>
+        <script src="js/bootstrap.bundle.min.js" ></script>
+        <script src="js/main.js" ></script>
+
+    </body>
+</html>

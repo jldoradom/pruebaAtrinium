@@ -1,0 +1,141 @@
+:root {
+    --blanco: #ffffff;
+    --gris1: #edf2f6;
+    --gris2: #2f3848;
+    --gris3: #1a202d;
+    --negro: #000000;
+    --rosa: #e6007ef2;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+} 
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-family:  var(--headingFont);
+}
+body {
+    min-height: 100%;
+    background-color: var(--gris1);
+    font-size: 16px; 
+    font-size: 1rem;
+}
+
+.btn {
+    font-weight: bold;
+}
+.form-group label,
+.list-group-item {
+    font-size: 1rem;
+}
+  
+.navbar .btn {
+    flex:1;
+}
+  
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--gris2);
+}
+.seccion {
+    display: block;
+}
+
+.container-logo {
+    margin: 20px 0;
+}
+
+.logo {
+    width: 180px;
+    height: 38px;
+}
+
+.menu {
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+    background-color: #001ce6;
+    padding-top: 24px;
+    padding-bottom: 38.4px !important;
+}
+
+
+.bg-jumbotron {
+    background-image: url("../img/lloyd-bilding.jpg");
+    background-size: cover;
+    width: 100%;
+    min-height: 30rem;
+    background-position: center;
+}
+
+.jumbotron {
+    padding: 15rem 1rem !important;
+    margin-bottom: 2rem;
+    border-radius: 0 !important;
+}
+
+.jumbotron h1 {
+    color: var(--blanco);
+}
+
+select {
+    width: 100%;
+}
+
+input[type="radio"] {
+    width: auto;
+    height: auto;
+    margin-top: 9px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.label-radio {
+    width: 60px;
+}
+
+.d-none-normal {
+    display: none;
+}
+
+.d-block-normal {
+    display: block;
+}
+
+.aparecer {
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   opacity: 1;
+   height: auto;
+  
+}
+
+.desaparecer {
+
+    transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    opacity: 0;
+    height: 0;
+ }
+
+
+
+
+
+
+

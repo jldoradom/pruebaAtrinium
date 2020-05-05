@@ -1,0 +1,57 @@
+@media(max-width: 500px){
+    .logo {
+        width: 146px;
+        height: 31px;
+    }
+    
+}
+
+@media(min-width: 500px){
+    
+    header {
+        margin-left: 5rem;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .menu-color {
+        background-color: #e6007ef2;
+        margin-top: 1rem;
+    }
+
+    .p-rl-0 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 768px) { 
+    .menu {
+        padding-bottom: 0.9rem;
+        padding-right: 1.5rem;
+    }
+    .navbar .btn {
+        flex: 0 1 auto;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
